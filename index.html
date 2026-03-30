@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deep Tours and Travels</title>
+
+
+
+
+<style>
+body{margin:0;font-family:Arial;}
+
+header {background:#0b3d91;color:white;text-align:center;padding:20px;}
+
+nav {display:flex;justify-content:center;background:#222;flex-wrap:wrap;}
+nav a {color:white;padding:14px 20px;text-decoration:none;}
+nav a:hover {background:#555;}
+
+.hero {
+  background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
+  color:white;
+  padding:100px 20px;
+  text-align:center;
+}
+
+.section {padding:40px;text-align:center;}
+
+.cards {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.card {
+  border:1px solid #ddd;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 4px 8px rgba(0,0,0,0.2);
+  text-align:center;
+  margin:10px;
+  width:250px;
+}
+
+.card img {
+  width:100%;
+  Height:200px;
+  object-fit:cover;
+  display:block;
+  background:#f5f5f5;
+}
+
+footer {
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:15px;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Deep Tours and Travels</h1>
+<p>Taxi Service • Tour Packages • Airport Transfers • Outstation Trips</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#services">Tour</a>
+<a href="#airport">Airport</a>
+<a href="#sedan">Sedan Cars</a>
+<a href="#suv">SUV Cars</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<h1>Travel Comfortably with Us</h1>
+<p>Serving Uttarakhand, Delhi & Nearby States</p>
+</section>
+
+<!-- TOUR PACKAGES -->
+<section class="section" id="services">
+<h2>Tour Packages</h2>
+
+<div class="cards">
+
+<div class="card" onclick="toggleDetails()" style="cursor:pointer;">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+<h3>View Tour Routes</h3>
+
+<div id="tourDetails" style="display:block;">
+<p>
+📍 Dehradun – Mussoorie<br>
+📍 Rishikesh – Haridwar<br>
+📍 Delhi – Nainital – Shimla<br><br>
+
+🚗 All India Outstation Service<br>
+✈️ Airport pickup included<br>
+✔ Custom packages available<br>
+Contact for further details 
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- AIRPORT -->
+<section class="section" id="airport">
+<h2>Airport Transfers</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c">
+<h3>Dehradun Airport</h3>
+<p>Jolly Grant Airport pickup & drop</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+<h3>Delhi Airport</h3>
+<p>Comfortable outstation airport service</p>
+</div>
+
+</div>
+
+<h2>Our Drivers</h2>
+
+<div class="card">
+
+<img src="images/driver.jpg">
+<p>Experienced Professional Drivers,Safe and Reliable</p>
+</div>
+</section>
+
+<!-- SEDAN -->
+<section class="section" id="sedan">
+<h2 onclick="toggleSedan()" style="cursor:pointer;">
+🚗 Our Sedan Cars (Click to View)
+</h2>
+
+<div id="sedanCars" style="display:none;">
+
+<div class="cards">
+
+<div class="card">
+<img src="images/dzire.jpg">
+<h3>Swift Dzire</h3>
+<p>4-seater | Comfortable</p>
+</div>
+
+<div class="card">
+<img src="images/dzire1.jpg">
+<h3>Swift Dzire</h3>
+<p>4-seater,Perfect for family trips</p>
+</div>
+
+<div class="card">
+<img src="images/dzire2.jpg">
+<h3>Swift Dzire</h3>
+<p>Spacious seating for 4 passengers</p>
+</div>
+
+<div class="card">
+<img src="images/dzire3.jpg">
+<h3>Swift Dzire</h3>
+<p>Reliable for daily travel</p>
+</div>
+
+<div class="card">
+<img src="images/dzire4.jpg">
+<h3>Swift Dzire</h3>
+<p>Smooth & comfortable ride</p>
+</div>
+
+<div class="card">
+<img src="images/wagonr.jpg">
+<h3>Maruti Suzuki Wagon R</h3>
+<p>Spacious & budget-friendly</p>
+</div>
+
+<div class="card">
+<img src="images/tiago.jpg">
+<h3>Tata Tiago EV</h3>
+<p>Fuel efficient & budget-friendly</p>
+</div>
+
+<div class="card">
+<img src="images/celerio.jpg">
+<h3>Maruti Suzuki Celerio</h3>
+<p>Comfortable & hassle-free travel</p>
+</div>
+
+<div class="card">
+<img src="images/alto.jpg">
+<h3>Maruti Suzuki Alto</h3>
+<p>Well-maintained & sanitized car</p>
+</div>
+
+<div class="card">
+<img src="images/aura.jpg">
+<h3>Hyundai Aura</h3>
+<p>Designed for a relaxing journey</p>
+</div>
+
+</div>
+
+<p style="margin-top:20px; font-weight:bold;">
+💰 Pricing depends on distance and trip type. Contact us for details.
+</p>
+<p>
+More vehicles available as per customer's choice and requirement
+</p>
+
+</div>
+</section>
+
+<!-- SUV -->
+<section class="section" id="suv">
+<h2 onclick="toggleSUV()" style="cursor:pointer;">
+🚙 Our SUV Cars (Click to View)
+</h2>
+
+<div id="suvCars" style="display:none;">
+
+<div class="cards">
+
+<div class="card">
+<img src="images/ertiga.jpg">
+<h3>Maruti Ertiga</h3>
+<p>7-seater | Perfect for family trips</p>
+</div>
+
+<div class="card">
+<img src="images/crysta.jpg">
+<h3>Innova Crysta</h3>
+<p>Comfortable seating with extra space</p>
+</div>
+
+<div class="card">
+<img src="images/fortuner.jpg">
+<h3>Toyota Fortuner(0001)</h3>
+<p>Luxury & long distance comfort</p>
+</div>
+
+<div class="card">
+<img src="images/innova.jpg">
+<h3>Toyoto Innova</h3>
+<p>Powerful performance on all terrains</p>
+</div>
+
+<div class="card">
+<img src="images/marazzo.jpg">
+<h3>Mahindra Marazzo</h3>
+<p>Enjoy a relaxed and spacious ride</p>
+</div>
+
+</div>
+
+<p style="margin-top:20px; font-weight:bold;">
+💰 Pricing depends on distance and trip type. Contact us for details.
+</p>
+<p>
+More vehicles available as per customer's choice and requirement
+</p>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+<h2>Contact Us</h2>
+<p><b>Phone:</b> +91 9536515151</p>
+<p><b>Email:</b> pooja619gupta@gmail.com</p>
+<p><b>Address:</b> Dehradun, Uttarakhand</p>
+<p><b>Available:</b> 24/7 Service</p>
+</section>
+
+<footer>
+<p>© 2026 Deep Tours and Travels</p>
+</footer>
+
+<script>
+function toggleSedan() {
+  var x = document.getElementById("sedanCars");
+  x.style.display = (x.style.display === "none") ? "block" : "none";
+}
+
+function toggleSUV() {
+  var x = document.getElementById("suvCars");
+  x.style.display = (x.style.display === "none") ? "block" : "none";
+}
+
+function toggleDetails() {
+  var x = document.getElementById("tourDetails");
+  x.style.display = (x.style.display === "none") ? "block" : "none";
+}
+</script>
+
+</body>
+</html>
