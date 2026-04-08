@@ -276,7 +276,30 @@ More vehicles available as per customer's choice and requirement
 
 </div>
 </section>
+</section>
 
+<!-- TRAVELLER SECTION -->
+<h2 onclick="toggleTraveller()">🚐 Our Travellers (Click to View)</h2>
+
+<div id="traveller-section" style="display:none;" class="car-container">
+
+  <div class="card">
+    <img src="images/traveller1.jpg">
+    <h3>Tempo Traveller 12 or 18 Seater</h3>
+    <p>Spacious | Comfortable | Group Travel</p>
+  </div>
+
+  <div class="card">
+    <img src="
+    <h3>Tempo Traveller 12 or 18 seater</h3>
+    <p>Perfect for Tours | AC | Large Space</p>
+  </div>
+
+  
+</div>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
 <!-- CONTACT -->
 <section class="section" id="contact">
 <h2>Contact Us</h2>
@@ -306,6 +329,15 @@ function toggleDetails() {
   x.style.display = (x.style.display === "none") ? "block" : "none";
 }
 </script>
-
+<script>
+function toggleTraveller() {
+  var x = document.getElementById("traveller-section");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 </body>
 </html>
